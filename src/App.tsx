@@ -19,15 +19,6 @@ const App = () => {
   return (
     <Box sx={{ flexDirection: "row" }}>
       <AppBar>
-        <Toolbar sx={{ backgroundColor: "white" }}>
-          <Avatar
-            alt="Bright Earth"
-            sx={{ margin: "1rem", minWidth: "10rem" }}
-            src={
-              "https://planner.luxcarta.online/app/assets/media/logos/BE_Logo.svg"
-            }
-          ></Avatar>
-        </Toolbar>
         <Toolbar
           sx={{
             backgroundColor: "#1f6294",

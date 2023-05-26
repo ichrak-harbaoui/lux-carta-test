@@ -23,7 +23,9 @@ const App = () => {
           <Avatar
             alt="Bright Earth"
             sx={{ margin: "1rem", minWidth: "10rem" }}
-            src={"/logoBright.png"}
+            src={
+              "https://planner.luxcarta.online/app/assets/media/logos/BE_Logo.svg"
+            }
           ></Avatar>
         </Toolbar>
         <Toolbar
@@ -79,7 +81,7 @@ const App = () => {
       <Box
         sx={{
           display: "flex",
-          marginTop: "5%",
+          marginTop: "10%",
           height: "100vh",
           justifyContent: "center",
           backgroundColor: "#E1E3E7",

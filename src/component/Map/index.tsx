@@ -5,9 +5,13 @@ import CardContent from "@mui/material/CardContent";
 import RoomIcon from "@mui/icons-material/Room";
 import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+
 import mapboxgl from "mapbox-gl";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css";
 import "./map.css";
+import { Divider } from "@mui/material";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaWNocmFrLWhhcmJhb3VpIiwiYSI6ImNsaTJmMm8wNjA1ODczcG4wYm1tMmdlbnQifQ.1Ia11ZV0BckkKrshSskCNA";
 
@@ -31,9 +35,11 @@ const Map = ({ events, setEvents }) => {
       map.remove();
     };
   }, []);
+
   const mapconfig = (map) => {
     map.addControl(Draw, "top-right");
 
+    map.addControl(geocoder, "top-left");
     map.addControl(
       new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -44,6 +50,12 @@ const Map = ({ events, setEvents }) => {
       })
     );
   };
+  const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+    marker: false,
+    placeholder: "Search for a place",
+  });
   var Draw = new MapboxDraw({
     displayControlsDefault: false,
     controls: {
@@ -58,7 +70,8 @@ const Map = ({ events, setEvents }) => {
         titleTypographyProps={{ variant: "h5" }}
         avatar={<RoomIcon sx={{ color: "green" }} />}
       ></CardHeader>
-      <CardContent className="card-content " sx={{ padding: 0 }}>
+      <Divider />
+      <CardContent className="card-content " sx={{ padding: 0, height: "85%" }}>
         <div id="map-container" className="map-container " />
       </CardContent>
     </Card>

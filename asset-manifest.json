@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lux-carta-test/static/css/main.eabf0864.css",
-    "main.js": "/lux-carta-test/static/js/main.b2469773.js",
+    "main.css": "/lux-carta-test/static/css/main.787d478b.css",
+    "main.js": "/lux-carta-test/static/js/main.9445d131.js",
     "static/js/787.828dbffc.chunk.js": "/lux-carta-test/static/js/787.828dbffc.chunk.js",
     "index.html": "/lux-carta-test/index.html",
-    "main.eabf0864.css.map": "/lux-carta-test/static/css/main.eabf0864.css.map",
-    "main.b2469773.js.map": "/lux-carta-test/static/js/main.b2469773.js.map",
+    "main.787d478b.css.map": "/lux-carta-test/static/css/main.787d478b.css.map",
+    "main.9445d131.js.map": "/lux-carta-test/static/js/main.9445d131.js.map",
     "787.828dbffc.chunk.js.map": "/lux-carta-test/static/js/787.828dbffc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eabf0864.css",
-    "static/js/main.b2469773.js"
+    "static/css/main.787d478b.css",
+    "static/js/main.9445d131.js"
   ]
 }

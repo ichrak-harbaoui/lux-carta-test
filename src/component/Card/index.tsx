@@ -191,13 +191,6 @@ const SideCard = () => {
                   label="2D Vectors
                   "
                 />
-                <Typography
-                  sx={{ marginLeft: "1rem" }}
-                  variant="h5"
-                  component="h5"
-                >
-                  10 credits/km2
-                </Typography>
 
                 <Typography>
                   <ul>
@@ -214,13 +207,6 @@ const SideCard = () => {
 
                   "
                 />
-                <Typography
-                  sx={{ marginLeft: "1rem" }}
-                  variant="h5"
-                  component="h5"
-                >
-                  30 credits/km2{" "}
-                </Typography>
 
                 <Typography sx={{ color: "gray" }}>
                   <ul>
@@ -273,7 +259,7 @@ const SideCard = () => {
               sx={{
                 backgroundColor: "#1f6294",
                 color: "white",
-                padding: "1rem",
+                padding: "0.5rem",
               }}
             >
               <option value={10}>Mapbox</option>

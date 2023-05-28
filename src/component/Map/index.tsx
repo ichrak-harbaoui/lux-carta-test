@@ -71,7 +71,10 @@ const Map = ({ events, setEvents }) => {
         avatar={<RoomIcon sx={{ color: "green" }} />}
       ></CardHeader>
       <Divider />
-      <CardContent className="card-content " sx={{ padding: 0, height: "85%" }}>
+      <CardContent
+        className="card-content "
+        sx={{ padding: 0, height: "85%", width: "100%" }}
+      >
         <div id="map-container" className="map-container " />
       </CardContent>
     </Card>

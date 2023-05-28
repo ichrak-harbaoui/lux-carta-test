@@ -83,13 +83,14 @@ const App = () => {
           display: "flex",
           marginTop: "10%",
           height: "100vh",
-          justifyContent: "center",
           backgroundColor: "#E1E3E7",
         }}
       >
-        <SideCard />
+        <Box sx={{ flex: "20%", minWidth: "20rem" }}>
+          <SideCard />
+        </Box>
 
-        <Box sx={{ flex: { xs: "1", sm: "1" } }}>
+        <Box sx={{ flex: "80%", justifyContent: "center" }}>
           <Map events={events} setEvents={setEvents} />
         </Box>
       </Box>
